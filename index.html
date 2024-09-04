@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Archivo de estilos propio -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Selector de Color RGB</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div id="color-box" class="mb-3"></div>
+                        <div class="mb-3">
+                            <label for="redRange" class="form-label">Rojo</label>
+                            <input type="range" id="redRange" class="form-range" min="0" max="255" step="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="greenRange" class="form-label">Verde</label>
+                            <input type="range" id="greenRange" class="form-range" min="0" max="255" step="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="blueRange" class="form-label">Azul</label>
+                            <input type="range" id="blueRange" class="form-range" min="0" max="255" step="1">
+                        </div>
+                        <div class="mb-3">
+                            <p class="h4" id="hexCode">#000000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo de scripts propio -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
